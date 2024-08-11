@@ -41,15 +41,10 @@ public class Methods {
     }
 
     //Задание 5
-    public boolean sumOfNumbers(int a, int b) {
+    public boolean sumOfNumbers(int a, int b)
+    {
         int c = a + b;
-        if (c > 9 && c < 21) {
-            System.out.println("Лежит в пределах от 10 до 20");
-            return true;
-        } else {
-            System.out.println("Не лежит в пределах от 10 до 20");
-            return false;
-        }
+        return c > 9 && c < 21;
     }
 
     //Задание 6
@@ -62,11 +57,15 @@ public class Methods {
     }
 
     //Задание 7
-    public boolean isNumberPositive(int number) {
-        if (number < 0) {
+    public boolean isNumberPositive(int number)
+    {
+        if (number < 0)
+        {
             System.out.println(true);
             return true;
-        } else {
+        }
+        else
+        {
             System.out.println(false);
             return false;
         }
@@ -80,17 +79,9 @@ public class Methods {
     }
 
     //Задание 9
-    public boolean isLeapYear(int year) {
-        if (year % 4 == 0) {
-            return true;
-        }
-        if (year % 100 == 0) {
-            return false;
-        }
-        if (year % 400 == 0) {
-            return true;
-        }
-        return false;
+    public boolean isLeapYear(int year)
+    {
+        return year % 4 == 0 && (year % 100 != 0 || year % 400 ==0);
     }
 
     //Задание 10
@@ -114,6 +105,4 @@ public class Methods {
         }
         return newArr;
     }
-
-    //С заданиями 12 - 14 возникли проблемы, поэтому хотел бы попросить совета для выполнения
 }
