@@ -23,8 +23,8 @@ public class Cat extends Animal {
         System.out.println("Не может плавать");
     }
 
-    public void eat(int foodAmount, int foodLeft){
-        if (foodAmount <= foodLeft){
+    public void eat(int foodAmount, int foodLeft) {
+        if (foodAmount <= foodLeft) {
             System.out.println("Кот покушал " + foodAmount + " единиц еды");
             isFed = true;
         } else {
@@ -32,7 +32,7 @@ public class Cat extends Animal {
         }
     }
 
-    public boolean isFed(){
+    public boolean isFed() {
         return false;
     }
 
