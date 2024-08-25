@@ -1,6 +1,6 @@
 public class Dog extends Animal {
     String name;
-    static int countDog = 0;
+    private static int countDog = 0;
 
     public Dog(String name) {
         super();

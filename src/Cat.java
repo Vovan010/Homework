@@ -1,6 +1,7 @@
 public class Cat extends Animal {
     String name;
-    static int countCat = 0;
+    private static int countCat = 0;
+    private boolean isFed = false;
 
     public Cat(String name) {
         super();
@@ -20,6 +21,19 @@ public class Cat extends Animal {
     @Override
     public void animalSwim(int length) {
         System.out.println("Не может плавать");
+    }
+
+    public void eat(int foodAmount, int foodLeft){
+        if (foodAmount <= foodLeft){
+            System.out.println("Кот покушал " + foodAmount + " единиц еды");
+            isFed = true;
+        } else {
+            System.out.println("В миске недостаточно еды");
+        }
+    }
+
+    public boolean isFed(){
+        return false;
     }
 
     public static int getCountCat() {
