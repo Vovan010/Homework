@@ -8,11 +8,9 @@ public class Main {
         phoneBook.add("Сидоров", "456-789");
         phoneBook.add("Петров", "987-654");
 
-        // Получаем номера телефонов по фамилии
         System.out.println("Телефоны Иванова: " + phoneBook.get("Иванов"));
         System.out.println("Телефоны Петрова: " + phoneBook.get("Петров"));
 
-        // Выводим весь справочник
         System.out.println("\nВесь телефонный справочник:");
         phoneBook.printAll();
     }
