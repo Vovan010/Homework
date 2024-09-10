@@ -1,7 +1,7 @@
 public class FactorialOfANumber {
     public static long factorial(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("Число должно быть неотрицательным");
+            throw new IllegalArgumentException("Number must be non-negative.");
         }
         long result = 1;
         for (int i = 2; i <= n; i++) {
